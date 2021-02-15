@@ -1,0 +1,137 @@
+/* General style */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: hsl(185, 75%, 39%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #2E3349;
+  font-size: 1.125rem;
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.card {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 1rem;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+   
+  }
+  
+/* Header */
+
+.header {
+  background-image: url(images/bg-pattern-card.svg);
+  height: 8.75rem;
+}
+
+.img-holder {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: solid #fff 5px;
+  overflow: hidden;
+  margin: -50px auto;
+}
+
+.img-holder img {
+  width: 100%;
+  height: auto;
+}
+
+/* Profile */
+
+.name {
+  padding-top: 4.5rem;
+  font-weight: bold;
+}
+
+.age {
+  font-weight: normal;
+  color: grey;
+}
+
+.location {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  color: grey;
+  padding-top: 0.875rem;
+  padding-bottom: 1.75rem;
+}
+
+.profile {
+  border-bottom: solid 1px;
+}
+
+/* Bottom */
+
+.card-bottom{
+  padding: 1.5rem 3.4rem 1.5rem 2.8rem;
+}
+
+
+.stats {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+.small {
+  font-size: 0.7rem;
+  line height: 0.7rem;
+  color: #6B7082;
+  padding-top: 0.50rem;
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 1.25rem;
+    font-size: 0.7rem; 
+    text-align: center;
+
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 980px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 582px) {
+  .card {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 80%;
+  }
+}
+
+
